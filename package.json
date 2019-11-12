@@ -19,5 +19,10 @@
   "homepage": "https://github.com/byteford/BotPipeline#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2",
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
   }
 }
