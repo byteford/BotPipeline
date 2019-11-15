@@ -1,9 +1,7 @@
-const app = require('../app')
-const supertest = require('supertest')
-const request = supertest(app)
+//const app = require('../app')
+require('dotenv').config()
 
-it('Gets the test endpoint', async done=>{
-    const res = await request.get('/')
-
-    done()
-})
+test("Test ENV",() =>{
+    expect(process.env.BOT_USERNAME).not.toBe(undefined);
+    expect(process.env.OAUTH_TOKEN).not.toBe(undefined);
+});

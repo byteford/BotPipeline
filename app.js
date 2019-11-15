@@ -7,8 +7,8 @@ app.get('/',function(req,res){
 module.exports = app*/
 //app.listen(4000)
 
-const dotenv = require('dotenv')
-dotenv.config();
+
+
 const tmi = require('tmi.js');
 //set up options
 const opts = {
@@ -36,5 +36,5 @@ function onMessageHandler(target,context,msg,self){
 }
 //connected handler
 function onConnectedHandler(addr, port){
-    console.log('* connected to ${addr}:${port}');
+    console.log(`* connected to ${addr}:${port}`);
 }
