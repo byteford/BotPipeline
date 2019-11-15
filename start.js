@@ -1,2 +1,2 @@
-const app = require('./app.js')
-app.listen(4000)
+const client = require('./app.js');
+client.connect();
