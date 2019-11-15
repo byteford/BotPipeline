@@ -18,7 +18,7 @@ pipeline {
       }
     }
     stage('Run'){
-      stages{
+      steps{
         sh 'node start.js'
       }
     }
