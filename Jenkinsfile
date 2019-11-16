@@ -27,10 +27,6 @@ pipeline {
         sh 'npm test'
       }
     }
-    stage('Run'){
-      steps{
-        sh 'node start.js'
-      }
     }
 
   }
