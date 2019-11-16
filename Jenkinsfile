@@ -1,7 +1,7 @@
 pipeline {
   agent any
   tools {nodejs "node"}
-  enviroment{
+  environment {
         BOT_USERNAME = credentials('BOT_USERNAME')
         OAUTH_TOKEN = credentials('OAUTH_TOKEN')
       }
