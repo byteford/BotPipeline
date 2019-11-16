@@ -27,7 +27,6 @@ pipeline {
         sh 'npm test'
       }
     }
-    }
 
   }
 }
